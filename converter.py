@@ -11,7 +11,7 @@ def main(wf):
 
     try:
         url = "https://twitter.com/intent/user?user_id=%s" % int(query)
-        pattern = '\"twitter://user\?screen_name=(\w+)\">'
+        pattern = '\"/intent/follow\?screen_name=(\w+)\">'
     except:
         url = 'https://twitter.com/' + query
         pattern = 'data-user-id=\"([0-9]+)\"'
